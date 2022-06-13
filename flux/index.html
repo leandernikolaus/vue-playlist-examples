@@ -25,16 +25,13 @@
 </head>
 <body>
 <div id="app">
-<song-form
-    v-on:new-song="addSong($event)"
-></song-form>
+<song-form></song-form>
 
 <ul id="playlist">
     <song-list-item 
         v-for="(song, index) in playlist"
         v-bind:song="song"
         v-bind:key="index"
-        v-on:delete="remove(index)"
     ></song-list-item>
 </ul>
 </div>

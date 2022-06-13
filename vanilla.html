@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercise #3b: Advanced playlist</title>
-    <link rel="stylesheet" href="exercise3.css">
+    <link rel="stylesheet" href="style.css">
     <script>
         function handleButtonClick() {
             var textInput = document.getElementById("songTextInput");
@@ -18,7 +18,7 @@
                 var ul = document.getElementById("playlist");
                 // del is an image
                 var del = document.createElement("img");
-                del.src = "images/delete.png";
+                del.src = "delete.png";
                 del.className = "delete";
                 del.onclick = delSong;
                 li.appendChild(del);
